@@ -21,8 +21,9 @@ function myfun()
     var i = document.getElementById("30");
     i.style.backgroundColor = "red";
 }
-function draw-from-list(v)
+function draw()
 {
+    var v = [0,0,0,1,0,4];
     for ( var i=0; i < v.length; i+=2){
       var y = v[i];
       var x = v[i+1];
@@ -57,4 +58,5 @@ for ( var i = 0; i < gridSize; i++ ) { //creates grid Column with limit of gridz
 
 }
 html += '<button onclick="myfun()">myfun</button>';
+html += '<button onclick="draw()">draw  </button>';
 board.innerHTML = html;
