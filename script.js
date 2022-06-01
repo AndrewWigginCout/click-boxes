@@ -1,5 +1,6 @@
 var stampColour = 'black';
-var board = document.getElementById( "grid" );
+var boardv = document.getElementsByClassName( "grid" );
+var board = boardv[0];
 var gridSize = 20;
 var x = 0;
 var v = "";
